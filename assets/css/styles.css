@@ -1,6 +1,6 @@
 :root{
     --border-radius: 25px;
-    --border: rgb(53, 181, 87);
+    --border: #ff00f7;
 }
 @import url("rolagem.css");
 
@@ -8,8 +8,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #fff;
-    background-image: url(..//img/bkg3.jpg);
+    background-color: #947991;
+    /* background-image: url(..//img/bkg3.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -26,8 +26,7 @@ body{
 
 .container{
     /* background-color: #ffffffb4; */
-    /* background-color: linear-gradient(#c96c01, #6c007a); */
-    background-image: linear-gradient(#63daf5, #e9f09b);
+    background-image: linear-gradient(#f690cfaa, #dfdfdfaa);
     width: calc(35rem + 8vw);
     border: 2px solid var(--border);
     border-radius: var(--border-radius);
@@ -53,6 +52,9 @@ body{
 }
 .sobre{
     text-align: center;
+    max-height: 18rem;
+    overflow-y: auto;
+    padding-right: 1rem;
 }
 .sobre p{
     text-align: justify;
@@ -80,23 +82,19 @@ a, li{
     padding: 1rem;
     /* opacity: 80%; */
 }
-.redes-sociais .outro{
-    display: block;
+a{
     width: 22rem;
     height: 4rem;
+    display: block;
+}
+.redes-sociais .outro{
     background-color: #00aaffcd;
 }
 .redes-sociais .insta{
-    display: block;
-    width: 22rem;
-    height: 4rem;
     /* background-image: linear-gradient(#c96c01, #6c007a); */
     background-color: #f55308cd;
 }
 .redes-sociais .whats{
-    display: block;
-    width: 22rem;
-    height: 4rem;
     /* background-image: linear-gradient(#1aec2fdd, #147224); */
     background-color: #1aec2fcd;
 }
@@ -114,6 +112,7 @@ li a:hover{
     opacity: 30%;
     transition: all .5s ease-out;
     font-size: .5rem;
+    z-index: -1;
 }
 .heart{
     color: #f00;
