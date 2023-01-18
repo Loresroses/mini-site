@@ -1,0 +1,123 @@
+:root{
+    --border-radius: 25px;
+    --border: rgb(53, 181, 87);
+}
+@import url("rolagem.css");
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #fff;
+    background-image: url(..//img/bkg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 3rem;
+}
+
+.container{
+    /* background-color: #ffffffb4; */
+    /* background-color: linear-gradient(#c96c01, #6c007a); */
+    background-image: linear-gradient(#63daf5, #e9f09b);
+    width: calc(35rem + 8vw);
+    border: 2px solid var(--border);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    height: fit-content;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+}
+.sobre{
+    text-align: center;
+}
+.sobre p{
+    text-align: justify;
+}
+.sobre :nth-child(2){
+    padding-bottom: 1rem;
+}
+.contatos{
+    text-align: center;
+}
+hr{
+    width: 100%;
+    opacity: 20%;
+}
+a, li{
+    list-style: none;
+    text-decoration: none;
+    padding-top: .8rem;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    color: #000;
+    transition: all .5s ease-out;
+}
+.redes-sociais{
+    padding: 1rem;
+    /* opacity: 80%; */
+}
+.redes-sociais .outro{
+    display: block;
+    width: 22rem;
+    height: 4rem;
+    background-color: #00aaffcd;
+}
+.redes-sociais .insta{
+    display: block;
+    width: 22rem;
+    height: 4rem;
+    /* background-image: linear-gradient(#c96c01, #6c007a); */
+    background-color: #f55308cd;
+}
+.redes-sociais .whats{
+    display: block;
+    width: 22rem;
+    height: 4rem;
+    /* background-image: linear-gradient(#1aec2fdd, #147224); */
+    background-color: #1aec2fcd;
+}
+
+/* || Efeitos de botoes, links */
+li a:hover{
+    opacity: 0.7;
+    transition: all .5s ease-out;
+}
+
+/* || Footer */
+.footer{
+    position: fixed;
+    bottom: 0;
+    opacity: 30%;
+    transition: all .5s ease-out;
+    font-size: .5rem;
+}
+.heart{
+    color: #f00;
+}
+.footer:hover{
+    opacity: 90%;
+}

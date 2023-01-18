@@ -1,0 +1,41 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+/* Faz com que 10px, seja equivalente a 1rem */
+html{
+  font-size: 62.5%;
+}
+/*
+  3. Permitir alturas com base em porcentagem no aplicativo
+*/
+html, body {
+  height: 100vh;
+}
+/*
+  Ajustes tipográficos!
+  4. Adicionar altura de linha acessível
+  5. Melhore a renderização do texto
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Criar um contexto de empilhamento raiz
+*/
+#root, #__next {
+  isolation: isolate;
+}
