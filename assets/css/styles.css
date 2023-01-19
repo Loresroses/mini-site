@@ -79,6 +79,7 @@ hr{
 }
 .contatos{
     text-align: center;
+    width: 100%;
 }
 .redes-sociais{
     margin-top: 1rem;
@@ -94,7 +95,8 @@ hr{
     flex-direction: row;
     justify-content: space-between;
     gap: 1rem;
-    width: 33rem;
+    /* width: 33rem; */
+    width: 100%;
 }
 .redes-sociais li a{
     flex-grow: 1;
@@ -108,13 +110,9 @@ hr{
     /* font-weight: bold; */
     border-radius: var(--border-radius);
     transition: all .5s ease-out;
-    text-decoration: none;
 }
-ul{
-    padding: 0;
-}
-li{
-    list-style: none;
+li img{
+    opacity: 80%;
 }
 .redes-sociais .outro{
     /* background-color: #00aaffcd; */
