@@ -1,6 +1,7 @@
 :root{
     --border-radius: 25px;
-    --border: #ff00f7;
+    /* --border: #ff00f7; */
+    --border: #f00;
 }
 @import url("rolagem.css");
 
@@ -15,7 +16,7 @@ body{
     background-position: center;
 
     font-size: 1.6rem;
-    font-family: sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #000;
     display: flex;
     justify-content: center;
@@ -24,8 +25,8 @@ body{
 }
 /* || Card principal */
 .container{
-    background-color: #ffffffb4;
-    background-image: linear-gradient(#f690cfaa, #dfdfdfaa);
+    /* background-color: #ffffffb4; */
+    background-image: linear-gradient(#f690957d, #dfdfdfaa);
     width: calc(35rem + 8vw);
     border: 2px solid var(--border);
     border-radius: var(--border-radius);
@@ -58,7 +59,7 @@ body{
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
-    border: 2px solid var(--border);
+    border: 4px solid var(--border);
 }
 .sobre{
     text-align: center;
@@ -95,7 +96,7 @@ hr{
     flex-direction: row;
     justify-content: space-between;
     gap: 1rem;
-    /* width: 33rem; */
+    width: 33rem;
     width: 100%;
 }
 .redes-sociais li a{
@@ -106,7 +107,7 @@ hr{
     color: #000;
     align-items: center;
     padding: .3rem;
-    /* font-size: 1.6rem; */
+    font-size: 1.6rem;
     /* font-weight: bold; */
     border-radius: var(--border-radius);
     transition: all .5s ease-out;
@@ -114,27 +115,31 @@ hr{
 li img{
     opacity: 80%;
 }
-.redes-sociais .outro{
-    /* background-color: #00aaffcd; */
-    background-color: rgb(51, 76, 140);
-}
+
 .redes-sociais .insta{
     /* background-image: linear-gradient(#c96c01, #6c007a); */
     /* background-color: #f55308cd; */
-    background-color: rgb(207, 26, 147);
+    background-color: #970968cd;
 }
 .redes-sociais .whats{
     /* background-image: linear-gradient(#1aec2fdd, #147224); */
     /* background-color: #1aec2fcd; */
-    background-color: rgb(42, 168, 26);
+    background-color: #2ba81ace;
 }
 
 /* || Efeitos de botoes, links */
 li a:hover{
-    opacity: 0.7;
+    opacity: 0.8;
     transition: all .5s ease-out;
+    transform: scale(95%);
+    font-weight: bold;
 }
-
+a:link{
+    color: #808080;
+}
+a:visited{
+    color: #000;
+}
 /* || Footer */
 .footer{
     position: fixed;
