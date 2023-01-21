@@ -1,7 +1,7 @@
 :root{
     --border-radius: 25px;
     /* --border: #ff00f7; */
-    --border: #f00;
+    --border: #46b9cc;
 }
 @import url("rolagem.css");
 
@@ -26,7 +26,8 @@ body{
 /* || Card principal */
 .container{
     /* background-color: #ffffffb4; */
-    background-image: linear-gradient(#f690957d, #dfdfdfaa);
+    /* background-color: #46b9cc7d; */
+    background-image: linear-gradient(#46b9cc7d, #dfdfdfaa);
     width: calc(35rem + 8vw);
     border: 2px solid var(--border);
     border-radius: var(--border-radius);
@@ -59,7 +60,7 @@ body{
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
-    border: 4px solid var(--border);
+    border: 2px solid var(--border);
 }
 .sobre{
     text-align: center;
@@ -108,7 +109,6 @@ hr{
     align-items: center;
     padding: .3rem;
     font-size: 1.6rem;
-    /* font-weight: bold; */
     border-radius: var(--border-radius);
     transition: all .5s ease-out;
 }
@@ -119,12 +119,12 @@ li img{
 .redes-sociais .insta{
     /* background-image: linear-gradient(#c96c01, #6c007a); */
     /* background-color: #f55308cd; */
-    background-color: #970968cd;
+    background-color: #46b9cc;
 }
 .redes-sociais .whats{
     /* background-image: linear-gradient(#1aec2fdd, #147224); */
     /* background-color: #1aec2fcd; */
-    background-color: #2ba81ace;
+    background-color: #46b9cc;
 }
 
 /* || Efeitos de botoes, links */
@@ -148,7 +148,9 @@ a:visited{
     transition: all .5s ease-out;
     font-size: .5rem;
     text-align: center;
-    /* z-index: -1; */
+}
+.footer p{
+    font-size: .5rem;
 }
 .heart{
     color: #f00;
