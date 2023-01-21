@@ -49,6 +49,10 @@ body{
     width: 100%;
     height: 100%;
     filter: blur(4px);
+    background-image: url("../img/bkg01.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }  
 
 .info{
